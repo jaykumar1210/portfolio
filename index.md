@@ -33,7 +33,34 @@ Results-driven Software Developer with expertise in software design, development
 - Provided Level 2 technical support for mobile and web applications, debugging system issues.  
 
 ## Projects  
-Coming soon...  
+## Projects
+
+### [CUTA Member Portal](https://members.cutaactu.ca/)
+![CUTA Member Portal](https://members.cutaactu.ca/favicon.ico)
+**Description**: The CUTA Member Portal is a platform for members of the Canadian Urban Transit Association.
+
+### [Sharp Insurance](https://sharpinsurance.ca/)
+![Sharp Insurance](https://sharpinsurance.ca/favicon.ico)
+**Description**: Sharp Insurance offers comprehensive insurance solutions tailored to individual needs.
+
+### [TrailStone Insurance Group](https://trailstoneinsurancegroup.com/)
+![TrailStone Insurance Group](https://trailstoneinsurancegroup.com/favicon.ico)
+**Description**: TrailStone Insurance Group provides personalized insurance services to protect what matters most.
+
+### [Caldwell Roach Insurance](https://caldwellroach.com/)
+![Caldwell Roach Insurance](https://caldwellroach.com/favicon.ico)
+**Description**: Caldwell Roach Insurance delivers a range of insurance products with a focus on customer satisfaction.
+
+### [Roper Valuation](https://ropervaluation.com/)
+![Roper Valuation](https://ropervaluation.com/favicon.ico)
+**Description**: Roper Valuation offers independent insurance and claim valuation services.
+
+### [QuoteLynk Insurance](https://quotelynk.com/)
+![QuoteLynk Insurance](https://quotelynk.com/favicon.ico)
+**Description**: QuoteLynk Insurance provides essential personal insurance products to customers in Oklahoma.
+
+
+
 
 ## Contact  
 📧 Email: [1210jaypatel@gmail.com](mailto:1210jaypatel@gamil.com)  
