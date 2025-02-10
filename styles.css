@@ -1,55 +1,196 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    font-weight: 700;
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-a {
-    text-decoration: none;
-}
-
+/* Navbar Styling */
 .navbar {
-    border-bottom: 2px solid #ddd;
+    transition: background-color 0.3s ease;
 }
 
-.navbar a {
-    color: #fff !important;
+.navbar-nav .nav-link {
+    font-weight: 700;
+    transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-item .nav-link {
-    font-weight: bold;
+.navbar-nav .nav-link:hover {
+    color: #007bff;
 }
 
+.navbar-scrolled {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* About Section */
 #about {
-    background: #f9f9f9;
-    padding: 50px 0;
+    padding: 60px 0;
+    background-color: #f8f9fa;
 }
 
-#experience .card {
-    border-radius: 8px;
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-#projects .card {
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+#about ul {
+    list-style: none;
+}
+
+#about ul li {
+    font-size: 1rem;
+    color: #333;
+}
+
+#about img {
+    max-width: 200px;
+}
+
+/* Experience Section */
+#experience {
+    padding: 60px 0;
+}
+
+#experience h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .card-img-top {
     height: 200px;
-    object-fit: scale-down;
+    object-fit: cover;
     border-radius: 8px;
-    aspect-ratio: 3 / 2;
 }
 
+.card-body .btn {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-body .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-footer p {
-    margin: 0;
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1.5s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Smooth Scrolling for Navbar */
+html {
+    scroll-behavior: smooth;
 }
