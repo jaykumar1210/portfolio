@@ -5,34 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jay Kumar - IT Professional Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header id="header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <h1 class="logo">Jay Kumar</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <a class="navbar-brand" href="#">Jay Kumar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section id="about">
+    <!-- About Me Section -->
+    <section id="about" class="py-5 bg-light">
         <div class="container">
-            <div class="profile">
-                <img src="profile.jpg" alt="Jay Kumar's Profile Picture" class="profile-pic">
-                <div class="bio">
-                    <h2>About Me</h2>
-                    <p>Results-driven IT professional with over 3 years of experience in IT support, systems integration, and project coordination. Proven expertise in CRM management, web development, and process optimization within high-volume environments. Skilled in integrating APIs, optimizing WordPress sites, and managing technical onboarding processes.</p>
-                    <h3>Core Skills</h3>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="profile.jpg" alt="Jay Kumar" class="img-fluid rounded-circle" style="width: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="display-4">About Me</h2>
+                    <p class="lead">Results-driven IT professional with over 3 years of experience in IT support, systems
+                        integration, and project coordination. Proven expertise in CRM management, web development, and
+                        process optimization within high-volume environments. Skilled in integrating APIs, optimizing
+                        WordPress sites, and managing technical onboarding processes.</p>
+                    <h4>Core Skills</h4>
                     <ul>
                         <li>CRM Management, WordPress Customization, API Integration</li>
                         <li>PHP, HTML, CSS, JavaScript, Node.js, MySQL, MongoDB</li>
@@ -44,92 +66,124 @@
         </div>
     </section>
 
-    <section id="experience">
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
         <div class="container">
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <h3>System Integration Project Lead</h3>
-                <p><strong>Canadian Urban Transit Association | Oct 2024 - April 2025 (Contract)</strong></p>
-                <ul>
-                    <li>Spearheaded CRM database management, ensuring data accuracy.</li>
-                    <li>Led WordPress site implementation and API integration.</li>
-                    <li>Enhanced site functionality, improving performance by 20%.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Implementation Engineer</h3>
-                <p><strong>Trufla Technology | Mar 2022 - May 2024</strong></p>
-                <ul>
-                    <li>Directed technical tasks for product implementations.</li>
-                    <li>Enhanced client onboarding, reducing setup time by 15%.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Technical Support Engineer</h3>
-                <p><strong>Trufla Technology | Apr 2021 - Mar 2022</strong></p>
-                <ul>
-                    <li>Provided Tier 2 technical support, resolving issues for project managers.</li>
-                    <li>Maintained and improved documentation for troubleshooting.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Corporate Manager</h3>
-                <p><strong>BarBurrito Restaurants | Feb 2020 - Mar 2021</strong></p>
-                <ul>
-                    <li>Managed daily operations, optimizing staff performance.</li>
-                    <li>Improved customer experience by resolving inquiries promptly.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="https://sharpinsurance.ca/path/to/image.jpg" alt="Sharp Insurance" />
-                    <h3><a href="https://sharpinsurance.ca/" target="_blank">Sharp Insurance</a></h3>
+            <h2 class="display-4 text-center mb-4">Professional Experience</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">System Integration Project Lead</h5>
+                            <p class="card-text"><strong>Canadian Urban Transit Association | Oct 2024 - April 2025</strong></p>
+                            <ul>
+                                <li>Spearheaded CRM database management, ensuring data accuracy.</li>
+                                <li>Led WordPress site implementation and API integration.</li>
+                                <li>Enhanced site functionality, improving performance by 20%.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="https://trailstoneinsurancegroup.com/path/to/image.jpg" alt="Trailstone Insurance" />
-                    <h3><a href="https://trailstoneinsurancegroup.com/" target="_blank">Trailstone Insurance</a></h3>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Implementation Engineer</h5>
+                            <p class="card-text"><strong>Trufla Technology | Mar 2022 - May 2024</strong></p>
+                            <ul>
+                                <li>Directed technical tasks for product implementations.</li>
+                                <li>Enhanced client onboarding, reducing setup time by 15%.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="https://caldwellroach.com/path/to/image.jpg" alt="Caldwell Roach" />
-                    <h3><a href="https://caldwellroach.com/" target="_blank">Caldwell Roach</a></h3>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Technical Support Engineer</h5>
+                            <p class="card-text"><strong>Trufla Technology | Apr 2021 - Mar 2022</strong></p>
+                            <ul>
+                                <li>Provided Tier 2 technical support, resolving issues for project managers.</li>
+                                <li>Maintained and improved documentation for troubleshooting.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="https://ropervaluation.com/path/to/image.jpg" alt="Roper Valuation" />
-                    <h3><a href="https://ropervaluation.com/" target="_blank">Roper Valuation</a></h3>
-                </div>
-                <div class="project-card">
-                    <img src="https://quotelynk.com/path/to/image.jpg" alt="Quotelynk" />
-                    <h3><a href="https://quotelynk.com/" target="_blank">Quotelynk</a></h3>
-                </div>
-                <div class="project-card">
-                    <img src="https://members.cutaactu.ca/path/to/image.jpg" alt="CUTA Member Portal" />
-                    <h3><a href="https://members.cutaactu.ca/" target="_blank">CUTA Member Portal</a></h3>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Corporate Manager</h5>
+                            <p class="card-text"><strong>BarBurrito Restaurants | Feb 2020 - Mar 2021</strong></p>
+                            <ul>
+                                <li>Managed daily operations, optimizing staff performance.</li>
+                                <li>Improved customer experience by resolving inquiries promptly.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:jay.kumar@example.com">jay.kumar@example.com</a></p>
-            <p>Phone: <a href="tel:+1234567890">+1 234-567-890</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jay-kumar" target="_blank">jay-kumar</a></p>
-            <p>GitHub: <a href="https://github.com/jaykumar" target="_blank">jaykumar</a></p>
+            <h2 class="display-4 text-center mb-4">My Projects</h2>
+            <div class="row">
+                <!-- Project Cards -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://sharpinsurance.ca/path/to/image.jpg" class="card-img-top" alt="Sharp Insurance">
+                        <div class="card-body">
+                            <h5 class="card-title">Sharp Insurance</h5>
+                            <a href="https://sharpinsurance.ca/" target="_blank" class="btn btn-primary">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://trailstoneinsurancegroup.com/path/to/image.jpg" class="card-img-top"
+                            alt="Trailstone Insurance">
+                        <div class="card-body">
+                            <h5 class="card-title">Trailstone Insurance</h5>
+                            <a href="https://trailstoneinsurancegroup.com/" target="_blank" class="btn btn-primary">Visit
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://caldwellroach.com/path/to/image.jpg" class="card-img-top" alt="Caldwell Roach">
+                        <div class="card-body">
+                            <h5 class="card-title">Caldwell Roach</h5>
+                            <a href="https://caldwellroach.com/" target="_blank" class="btn btn-primary">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- More projects here -->
+            </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
         <div class="container">
-            <p>&copy; 2025 Jay Kumar. All rights reserved.</p>
+            <h2 class="display-4 text-center mb-4">Contact Me</h2>
+            <ul class="list-unstyled text-center">
+                <li>Email: <a href="mailto:jay.kumar@example.com">jay.kumar@example.com</a></li>
+                <li>Phone: <a href="tel:+1234567890">+1 234-567-890</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/jay-kumar" target="_blank">jay-kumar</a></li>
+                <li>GitHub: <a href="https://github.com/jaykumar" target="_blank">jaykumar</a></li>
+            </ul>
         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 Jay Kumar. All rights reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS (Optional but for interactive elements like navbar toggler) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
