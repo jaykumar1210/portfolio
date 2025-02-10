@@ -39,8 +39,9 @@ a {
 
 .card-img-top {
     height: 200px;
-    object-fit: cover;
+    object-fit: scale-down;
     border-radius: 8px;
+    aspect-ratio: 3 / 2;
 }
 
 footer {
