@@ -12,25 +12,14 @@ body {
     color: #f1f1f1; /* Light text color */
 }
 
-a {
-    color: #00bcd4; /* Bright color for links */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #ff9800; /* Hover color for links */
-}
-
 /* Navbar Styling */
 .navbar {
-    transition: background-color 0.3s ease;
     background-color: #1a1a1a; /* Dark navbar */
 }
 
 .navbar-nav .nav-link {
     font-weight: 600;
     color: #ffffff; /* White text for navbar links */
-    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
@@ -46,30 +35,21 @@ a:hover {
 /* About Section */
 #about {
     padding: 60px 0;
-    background-image: url('https://www.transparenttextures.com/patterns/black-ink-paper.png');
+    background-image: url('https://cdn.pixabay.com/photo/2021/02/23/20/18/artificial-intelligence-6044240_960_720.jpg');
     background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 #about h2 {
     font-size: 2.8rem;
     font-weight: 700;
-    margin-bottom: 20px;
-    color: #ff9800; /* Orange color for titles */
+    color: #ff9800;
 }
 
 #about p {
     font-size: 1.1rem;
-    color: #dcdcdc; /* Slightly off-white for paragraphs */
-    line-height: 1.8;
-}
-
-#about ul {
-    list-style: none;
-}
-
-#about ul li {
-    font-size: 1rem;
-    color: #b0b0b0;
+    color: #dcdcdc;
 }
 
 #about img {
@@ -80,22 +60,15 @@ a:hover {
 /* Experience Section */
 #experience {
     padding: 60px 0;
-    background-color: #212121; /* Dark background for sections */
-}
-
-#experience h2 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #ff9800;
+    background-image: url('https://cdn.pixabay.com/photo/2020/04/22/09/47/digital-marketing-5070752_960_720.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .card {
     border: none;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    background-color: #2c2c2c; /* Dark cards */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f1f1f1;
     transition: transform 0.3s ease;
 }
 
@@ -103,89 +76,58 @@ a:hover {
     transform: translateY(-10px);
 }
 
-.card-body {
-    padding: 20px;
-    color: #f1f1f1;
-}
-
 .card-title {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.5rem;
     color: #ff9800;
 }
 
-.card-text {
-    color: #b0b0b0;
+.card-body .card-text {
+    color: #dcdcdc;
 }
 
 /* Projects Section */
 #projects {
     padding: 60px 0;
-    background-color: #121212;
+    background-image: url('https://cdn.pixabay.com/photo/2019/11/26/21/39/programming-4654070_960_720.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-#projects h2 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #ff9800;
-}
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+#projects .card {
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    border: 3px solid #00bcd4;
+    border: 2px solid #00bcd4;
 }
 
-.card-body .btn {
-    background-color: #00bcd4;
-    color: white;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-transform: uppercase;
-}
-
-.card-body .btn:hover {
+#projects .btn {
     background-color: #ff9800;
-    transform: scale(1.05);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+#projects .btn:hover {
+    background-color: #00bcd4;
 }
 
 /* Contact Section */
 #contact {
     padding: 60px 0;
-    background-color: #212121;
+    background-color: #333;
 }
 
-#contact h2 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-align: center;
+#contact a {
+    color: #00bcd4;
+}
+
+#contact a:hover {
     color: #ff9800;
-}
-
-#contact ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-#contact ul li {
-    font-size: 1.1rem;
-    color: #b0b0b0;
-    margin: 10px 0;
 }
 
 /* Footer */
 footer {
     background-color: #1a1a1a;
     color: #b0b0b0;
-    padding: 20px 0;
-    text-align: center;
 }
 
 /* Animations */
@@ -200,20 +142,6 @@ footer {
     }
 }
 
-.slide-up {
-    transform: translateY(20px);
-    opacity: 0;
-    animation: slideUp 1.5s forwards;
-}
-
-@keyframes slideUp {
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Smooth Scrolling for Navbar */
 html {
     scroll-behavior: smooth;
 }
