@@ -67,6 +67,18 @@ h2 {
     color: #2C3E50;
 }
 
+/* Add your updated CSS from previous responses */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align
+
 .profile {
     display: flex;
     align-items: center;
