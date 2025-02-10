@@ -1,138 +1,49 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f8f9fa;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Header */
-#header {
-    background-color: #333;
-    padding: 20px 0;
-}
-#header .logo {
-    color: #fff;
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-#header nav ul {
-    list-style: none;
-    float: right;
-}
-#header nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-#header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Section Styling */
 section {
     padding: 60px 0;
-    text-align: center;
 }
 
 h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 1.6rem;
-    color: #333;
+    font-size: 1.75rem;
 }
 
-/* About Section */
-#about .profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    margin-right: 30px;
-    width: 150px;
+ul li {
+    font-size: 1.1rem;
 }
 
-.bio {
-    text-align: left;
-    max-width: 600px;
+footer {
+    font-size: 0.9rem;
 }
 
-/* Experience Section */
-.job {
-    margin-bottom: 30px;
-}
-
-.job ul {
-    text-align: left;
-    margin-top: 10px;
-}
-
-/* Projects Section */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #fff;
+.card {
+    border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
     text-align: center;
 }
 
-.project-card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #f4f4f4;
-}
-
-.project-card h3 {
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-/* Contact Section */
-#contact p {
-    font-size: 1.2rem;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-footer a {
-    color: #fff;
+a {
     text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
 }
