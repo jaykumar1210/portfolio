@@ -36,6 +36,6 @@ Results-driven Software Developer with expertise in software design, development
 Coming soon...  
 
 ## Contact  
-📧 Email: [jaykumar@example.com](mailto:jaykumar@example.com)  
-🔗 LinkedIn: [linkedin.com/in/jaykumar](https://linkedin.com/in/jaykumar)  
-🐙 GitHub: [github.com/jaykumar](https://github.com/jaykumar)  
+📧 Email: [1210jaypatel@gmail.com](mailto:1210jaypatel@gamil.com)  
+🔗 LinkedIn: [linkedin.com/in/jaykumar](https://www.linkedin.com/in/jay-patel1210/)  
+🐙 GitHub: [github.com/jaykumar1210](https://github.com/jaykumar1210)  
