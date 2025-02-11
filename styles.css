@@ -72,6 +72,12 @@ body {
     transition: transform 0.3s ease;
 }
 
+.card img{
+        aspect-ratio: 3 / 2;
+    object-fit: contain;
+    background-color: #fff;
+}
+
 .card:hover {
     transform: translateY(-10px);
 }
