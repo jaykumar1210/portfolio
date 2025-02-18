@@ -170,7 +170,6 @@ html {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 @media screen and (max-width: 768px) {
