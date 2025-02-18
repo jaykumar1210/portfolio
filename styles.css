@@ -170,8 +170,14 @@ html {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
+@media screen and (max-width: 768px) {
+    .timeline {
+        display: block; /* Switch to block layout on smaller screens */
+    }
+}
 .timeline li {
     display: flex;
     /* align-items: center; */
