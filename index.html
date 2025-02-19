@@ -26,9 +26,29 @@
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">Jay Kumar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+       <!-- Resume Download Button -->
+    <a href="Jay_Kumar.pdf" class="btn"
+    onclick="trackResumeDownload(event, 'Jay_Kumar.pdf');">
+    Download Resume
+ </a>
+
+ <script>
+   function trackResumeDownload(event, fileUrl) {
+       event.preventDefault(); // Prevent immediate file download
+
+       // Send event to Google Analytics
+       gtag('event', 'download', {
+           'event_category': 'Resume',
+           'event_label': 'Resume Download',
+           'value': 1
+       });
+
+       // Delay download to ensure tracking is recorded
+       setTimeout(function () {
+           window.location.href = fileUrl;
+       }, 500);
+   }
+ </script>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
