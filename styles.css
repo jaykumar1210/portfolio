@@ -14,7 +14,7 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    background-color: #1a1a1a; /* Dark navbar */
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-nav .nav-link {
